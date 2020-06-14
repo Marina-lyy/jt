@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!--定义父子级关系 -->
+	<parent>
+		<groupId>com.jt.vip</groupId>
+		<artifactId>jt</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jt-manage</artifactId>
+	<packaging>war</packaging>
+	
+	<!--添加依赖  -->
+	<dependencies>
+		<dependency>
+			<groupId>com.jt.vip</groupId>
+			<artifactId>jt-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+
+	<!--Maven项目插件的说明 maven环境 项目打包/发布 1.xxxx.jar 2.xxx.war包 springBoot项目默认打成jar包. -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
